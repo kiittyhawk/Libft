@@ -9,7 +9,7 @@ void	*ft_memcpy(void *dst, const void *str, size_t n)
 	str1 = (unsigned char *)dst;
 	str2 = (const unsigned char *)str;
 	i = 0;
-	if (str1 == '\0' && str2 == '\0')
+	if (!str1 && !str2)
 		return (0);
 	while (i < n)
 	{
